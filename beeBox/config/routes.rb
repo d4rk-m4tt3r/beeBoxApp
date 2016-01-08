@@ -1,11 +1,15 @@
-BeeBox::Application.routes.draw do
-#Define Root URL
-root 'pages#index'
-  # Define Routes for Pages
-  get "/home" => 'pages#home'
-  get "/profile" => 'pages#profile'
-  get "/explore" => 'pages#explore'
-  
+Rails.application.routes.draw do
+
+  # this is the main page
+  root 'pages#index'
+
+  # pages
+
+  get '/home' => 'pages#home'
+
+  get '/profile' => 'pages#profile'
+
+  get '/explore' => 'pages#explore'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
